@@ -1,0 +1,23 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+/* font combos: https://www.figma.com/google-fonts/nunito-font-pairings/ ali osawld */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+
+  /* @apply text-base; */
+  @apply bg-background;
+
+}
+
+/* h {
+  @apply text-base;
+}  */
+
