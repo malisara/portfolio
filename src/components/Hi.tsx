@@ -1,5 +1,7 @@
-import LottieGif from "../lotties/codingGirlGif.json";
 import Lottie from "lottie-react";
+
+import IAmText from "./IAmText";
+import LottieGif from "../lotties/codingGirlGif.json";
 
 function Hi(): JSX.Element {
   return (
@@ -13,14 +15,14 @@ function Hi(): JSX.Element {
           lg:text-start text-4xl lg:text-6xl"
         >
           Hi, my name is
-          <span className="font-extrabold"> Sara.</span>
+          <span className="font-bold"> Sara.</span>
         </h1>
 
         <p className="mt-[3rem] text-lg md:text-2xl leading-10">
-          I am a self-taught{" "}
-          <span className="font-extrabold">web developer </span>
-          with an <span className="font-bold">MBA</span> degree.
+          I am a self-taught <span className="font-bold">web developer </span>
+          with a <span className="font-bold">MBA</span> degree.
         </p>
+        <IAmText />
       </div>
       <div className="order-1 lg:order-2 xl:pe-[10rem]">
         <Lottie
@@ -29,7 +31,6 @@ function Hi(): JSX.Element {
           width={50}
           autoplay={false}
           loop={false}
-          // style={{ height: 500 }}
         />
       </div>
     </div>

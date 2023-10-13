@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { FaBootstrap, FaHtml5, FaJs, FaPython } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import {
@@ -13,8 +12,9 @@ import {
   SiTailwindcss,
   SiTestinglibrary,
   SiVite,
-  SiVitest,
+  // SiVitest,
 } from "react-icons/si";
+import { useInView } from "react-intersection-observer";
 
 import Title from "./Title";
 
@@ -34,7 +34,7 @@ const iconTextPairs = [
   { icon: <FaBootstrap className="text-4xl" />, text: "Bootstrap" },
   { icon: <SiTestinglibrary className="text-4xl" />, text: "React test. lib" },
   { icon: <SiJest className="text-4xl" />, text: "Jest" },
-  { icon: <SiVitest className="text-4xl" />, text: "Vitest" },
+  // { icon: <SiVitest className="text-4xl" />, text: "Vitest" },
 ];
 
 function Technologies(): JSX.Element {
@@ -44,9 +44,9 @@ function Technologies(): JSX.Element {
     <>
       <Title text="Technologies" />
       <div
-        className="flex flex-wrap justify-center items-center"
+        className="flex flex-wrap justify-center 
+        items-center"
         ref={ref}
-        style={{ overflow: "scroll" }}
       >
         {iconTextPairs.map((pair, index) => (
           <motion.div

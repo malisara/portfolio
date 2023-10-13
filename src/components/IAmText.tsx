@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import ReactTextTransition, { presets } from "react-text-transition";
 
 const iAmAlso = [
-  "nature lover",
-  "fun fact nerd",
-  "jet lag enthusiast",
-  "bookworm",
-  "odd languages fan",
-  "mountain goat",
-  "culinary risk-taker",
+  "a nature lover",
+  "a fun fact nerd",
+  "a jet lag enthusiast",
+  "a bookworm",
+  "an odd languages fan",
+  "a mountain goat",
+  "a culinary risk-taker",
 ];
 
 function IAmText(): JSX.Element {
@@ -26,7 +26,7 @@ function IAmText(): JSX.Element {
 
   return (
     <div className="mt-5 text-lg md:text-2xl">
-      I am also a {""}
+      I am also {""}
       <ReactTextTransition springConfig={presets.gentle} inline>
         {iAmAlso[textIndex]}
       </ReactTextTransition>

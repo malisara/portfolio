@@ -1,12 +1,13 @@
 //todo change bg color
 
 import { AnimatePresence, motion } from "framer-motion";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { useRef, useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { PiTriangleDuotone } from "react-icons/pi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link, animateScroll } from "react-scroll";
+
+import useMediaQuery from "../hooks/useMediaQuery";
 
 function Navbar(): JSX.Element | null {
   const isDesktop = useMediaQuery("(min-width: 1060px)");
