@@ -20,7 +20,7 @@ function Hi(): JSX.Element {
 
         <p className="mt-[3rem] text-lg md:text-2xl leading-10">
           I am a self-taught <span className="font-bold">web developer </span>
-          with a <span className="font-bold">MBA</span> degree.
+          with an <span className="font-bold">MBA</span> degree.
         </p>
         <IAmText />
       </div>
@@ -29,8 +29,8 @@ function Hi(): JSX.Element {
           animationData={LottieGif}
           height={50}
           width={50}
-          autoplay={false}
-          loop={false}
+          autoplay={true}
+          loop={true}
         />
       </div>
     </div>

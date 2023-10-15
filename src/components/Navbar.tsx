@@ -1,5 +1,3 @@
-//todo change bg color
-
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
@@ -15,7 +13,9 @@ function Navbar(): JSX.Element | null {
   const [navOnTop, setNavOnTop] = useState<boolean>(true);
   const ref = useRef<HTMLDivElement>(null);
 
-  const navbarBg = navOnTop ? "bg-transparent" : "bg-stone-50 border-b-2";
+  const navbarBg = navOnTop
+    ? "bg-transparent"
+    : "bg-stone-100 border-b border-cyan-900";
   const navLinks = [
     { label: "Projects" },
     { label: "Technologies" },
@@ -82,7 +82,7 @@ function Navbar(): JSX.Element | null {
       <AnimatePresence>
         {!isDesktop && mobileNavOpen && (
           <motion.div
-            className="fixed top-0 w-[50vw] h-[100vh] z-20
+            className="fixed top-0 w-[70vw] h-[100vh] z-20
             bg-stone-50 drop-shadow-lg ps-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

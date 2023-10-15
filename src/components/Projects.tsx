@@ -65,10 +65,8 @@ function Projects(): JSX.Element {
               >
                 <Lottie
                   animationData={project.icon}
-                  // height={5}
-                  // width={4}
-                  autoplay={false}
-                  loop={false}
+                  autoplay={true}
+                  loop={true}
                   style={{ height: 300 }}
                 />
               </div>
@@ -84,7 +82,7 @@ function Projects(): JSX.Element {
               </div>
             </div>
             {i < projectData.length - 1 && (
-              <div className="h-[1px] w-[60%] mx-auto my-[3rem] bg-secondaryColor"></div>
+              <div className="h-[1px] w-[60%] mx-auto my-[3rem] bg-stone-400"></div>
             )}
           </motion.div>
         ))}
