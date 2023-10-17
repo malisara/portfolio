@@ -7,6 +7,7 @@ import HangryExolorerGif from "../lotties/HangryExolorerGif.json";
 import SirCakeGif from "../lotties/SirCakeGif.json";
 import PlantyGif from "../lotties/PlantyGif.json";
 import Title from "./Title";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const projectData = [
   {
@@ -42,6 +43,8 @@ const projectData = [
 ];
 
 function Projects(): JSX.Element {
+  const isDesktop = useMediaQuery("(min-width: 1060px)");
+
   return (
     <>
       <Title text="Projects" />
@@ -65,13 +68,13 @@ function Projects(): JSX.Element {
               >
                 <Lottie
                   animationData={project.icon}
-                  autoplay={true}
-                  loop={true}
+                  autoplay={isDesktop} //animations is lagging ob android
+                  loop={isDesktop}
                   style={{ height: 300 }}
                 />
               </div>
               <div
-                className="flex flex-col gap-6 my-10 items-center 
+                className="flex flex-col gap-6 mt-2 mb-5 md:my-10 items-center 
                 text-center md:items-start md:text-start"
               >
                 <p className="text-2xl font-bold">{project.title}</p>
@@ -82,7 +85,9 @@ function Projects(): JSX.Element {
               </div>
             </div>
             {i < projectData.length - 1 && (
-              <div className="h-[1px] w-[60%] mx-auto my-[3rem] bg-stone-400"></div>
+              <div className="h-[1px] w-[60%] mx-auto
+               my-[1rem] md:my-[3rem] bg-stone-400">
+               </div>
             )}
           </motion.div>
         ))}
