@@ -30,7 +30,7 @@ const projectData = [
     icon: SirCakeGif,
     title: "Sir Cake",
     tech: "Django + Python",
-    description: "Cake store e-commerce",
+    description: "Cake store e-commerce.",
     url: "https://github.com/malisara/sir-cake",
   },
   {
@@ -85,9 +85,10 @@ function Projects(): JSX.Element {
               </div>
             </div>
             {i < projectData.length - 1 && (
-              <div className="h-[1px] w-[60%] mx-auto
-               my-[1rem] md:my-[3rem] bg-stone-400">
-               </div>
+              <div
+                className="h-[1px] w-[60%] mx-auto
+               my-[1rem] md:my-[3rem] bg-stone-400"
+              ></div>
             )}
           </motion.div>
         ))}
