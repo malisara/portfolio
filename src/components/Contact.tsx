@@ -22,7 +22,7 @@ function Contact(): JSX.Element {
 
         <div className={rowStyle}>
           <AiOutlineMail />
-          <a href="mailto:mali.sara7@gmai.com" className="hover:opacity-70">
+          <a href="mailto:mali.sara7@gmail.com" className="hover:opacity-70">
             mali.sara7@gmail.com
           </a>
         </div>
